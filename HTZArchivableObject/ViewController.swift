@@ -12,14 +12,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        setupObject()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func setupObject()
+    {
+        let obj = TestObject()
+        obj.name = "Hello World"
+        let someDict = TestObject.transformArchivableObjectForDictionary(obj)
+        print("Our encoded object is \(someDict)", terminator: "\n")
+        let decodedTestObject = TestObject.transformDictionaryForArchivableObject(someDict) as TestObject
+        print("The object's name is \(decodedTestObject.name)", terminator: "\n")
     }
-
-
 }
 
