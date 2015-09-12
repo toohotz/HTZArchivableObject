@@ -10,7 +10,7 @@ import Foundation
 
 @objc (TestObject)
 
-class TestObject: NSObject, ArchivableObject {
+class TestObject: NSObject, TransformableObject {
 
     var keyForObject: String
 

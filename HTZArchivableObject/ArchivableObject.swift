@@ -9,36 +9,36 @@
 import Foundation
 
 /**
-*  Protocol that defines an archivable object for purposes of transferring to a Watch App.
+*  Protocol that defines a transformable object for purposes of transferring to a Watch App.
 */
-public protocol ArchivableObject: NSCoding {
+public protocol TransformableObject: NSCoding {
 
-    /// Key for the archiveable object.
+    /// Key for the transformable object.
     var keyForObject: String {get set }
 }
 
-extension ArchivableObject {
+extension TransformableObject {
 
     /**
-    Transforms an **ArchivableObject** into a dictionary.
+    Transforms a **TransformableObject** into a dictionary.
 
-    - parameter object: The **ArchivableObject** to transform.
+    - parameter object: The **TransformableObject** to transform.
 
-    - returns: A dictionary with the archived object and its corresponding key.
+    - returns: A dictionary with the transformable object and its corresponding key.
     */
-    static public func transformArchivableObjectForDictionary(object: ArchivableObject) -> [String : AnyObject]
+    static public func transformObjectIntoDictionary(object: TransformableObject) -> [String : AnyObject]
     {
         return [object.keyForObject : NSKeyedArchiver.archivedDataWithRootObject(object)]
     }
 
     /**
-    Transforms a dictionary into an **ArchivableObject**.
+    Transforms a dictionary into a **TransformableObject**.
 
     - parameter dictionary: The dictionary to transform.
 
-    - returns: An object of type **ArchivableObject**.
+    - returns: A **TransformableObject** object.
     */
-    static public func transformDictionaryForArchivableObject<T: ArchivableObject>(dictionary: [String : AnyObject]) -> T
+    static public func transformDictionaryIntoObject<T: TransformableObject>(dictionary: [String : AnyObject]) -> T
     {
         return NSKeyedUnarchiver.unarchiveObjectWithData(dictionary[dictionary.keys.first!] as! NSData!) as! T
     }

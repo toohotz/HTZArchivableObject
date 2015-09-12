@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     {
         let obj = TestObject()
         obj.name = "Hello World"
-        let someDict = TestObject.transformArchivableObjectForDictionary(obj)
+        let someDict = TestObject.transformObjectIntoDictionary(obj)
         print("Our encoded object is \(someDict)", terminator: "\n")
-        let decodedTestObject = TestObject.transformDictionaryForArchivableObject(someDict) as TestObject
+        let decodedTestObject = TestObject.transformDictionaryIntoObject(someDict) as TestObject
         print("The object's name is \(decodedTestObject.name)", terminator: "\n")
     }
 }
