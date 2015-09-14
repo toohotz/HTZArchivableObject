@@ -20,12 +20,12 @@
 		E9818DE91B9F1AC8001161A6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DE81B9F1AC8001161A6 /* InterfaceController.swift */; };
 		E9818DEB1B9F1AC8001161A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DEA1B9F1AC8001161A6 /* ExtensionDelegate.swift */; };
 		E9818DED1B9F1AC8001161A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9818DEC1B9F1AC8001161A6 /* Assets.xcassets */; };
-		E9818E001B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; settings = {ASSET_TAGS = (); }; };
-		E9818E011B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; settings = {ASSET_TAGS = (); }; };
-		E9818E021B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; settings = {ASSET_TAGS = (); }; };
-		E9818E051B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; settings = {ASSET_TAGS = (); }; };
-		E9818E061B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; settings = {ASSET_TAGS = (); }; };
-		E9818E071B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; settings = {ASSET_TAGS = (); }; };
+		E9818E001B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; };
+		E9818E011B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; };
+		E9818E021B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; };
+		E9818E051B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; };
+		E9818E061B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; };
+		E9818E071B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -297,6 +297,8 @@
 		E9818DAF1B9F1AC7001161A6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = toohotz;
 				TargetAttributes = {
@@ -662,6 +664,7 @@
 				E9818DF31B9F1AC8001161A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9818DF51B9F1AC8001161A6 /* Build configuration list for PBXNativeTarget "HTZArchivableObject WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -670,6 +673,7 @@
 				E9818DF71B9F1AC8001161A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9818DF91B9F1AC8001161A6 /* Build configuration list for PBXNativeTarget "HTZArchivableObject" */ = {
 			isa = XCConfigurationList;
@@ -678,6 +682,7 @@
 				E9818DFB1B9F1AC8001161A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9818DFC1B9F1AC8001161A6 /* Build configuration list for PBXNativeTarget "HTZArchivableObjectTests" */ = {
 			isa = XCConfigurationList;
@@ -686,6 +691,7 @@
 				E9818DFE1B9F1AC8001161A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
