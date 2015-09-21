@@ -1,6 +1,6 @@
 //
-//  NSObjectArchivableObject.swift
-//  ArchivableSwiftObject
+//  TransformableObject.swift
+//  TransformableSwiftObject
 //
 //  Created by Kemar White on 9/3/15.
 //  Copyright © 2015 toohotz. All rights reserved.

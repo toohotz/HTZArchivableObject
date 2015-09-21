@@ -20,9 +20,9 @@
 		E9818DE91B9F1AC8001161A6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DE81B9F1AC8001161A6 /* InterfaceController.swift */; };
 		E9818DEB1B9F1AC8001161A6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DEA1B9F1AC8001161A6 /* ExtensionDelegate.swift */; };
 		E9818DED1B9F1AC8001161A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9818DEC1B9F1AC8001161A6 /* Assets.xcassets */; };
-		E9818E001B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; };
-		E9818E011B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; };
-		E9818E021B9F1AEE001161A6 /* ArchivableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */; };
+		E9818E001B9F1AEE001161A6 /* TransformableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* TransformableObject.swift */; };
+		E9818E011B9F1AEE001161A6 /* TransformableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* TransformableObject.swift */; };
+		E9818E021B9F1AEE001161A6 /* TransformableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818DFF1B9F1AEE001161A6 /* TransformableObject.swift */; };
 		E9818E051B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; };
 		E9818E061B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; };
 		E9818E071B9F1B2D001161A6 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9818E041B9F1B2D001161A6 /* TestObject.swift */; };
@@ -97,7 +97,7 @@
 		E9818DEA1B9F1AC8001161A6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E9818DEC1B9F1AC8001161A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9818DEE1B9F1AC8001161A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchivableObject.swift; sourceTree = "<group>"; };
+		E9818DFF1B9F1AEE001161A6 /* TransformableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformableObject.swift; sourceTree = "<group>"; };
 		E9818E041B9F1B2D001161A6 /* TestObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,7 +201,7 @@
 		E9818E081B9F1CD4001161A6 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				E9818DFF1B9F1AEE001161A6 /* ArchivableObject.swift */,
+				E9818DFF1B9F1AEE001161A6 /* TransformableObject.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -381,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9818DBD1B9F1AC7001161A6 /* ViewController.swift in Sources */,
-				E9818E001B9F1AEE001161A6 /* ArchivableObject.swift in Sources */,
+				E9818E001B9F1AEE001161A6 /* TransformableObject.swift in Sources */,
 				E9818E051B9F1B2D001161A6 /* TestObject.swift in Sources */,
 				E9818DBB1B9F1AC7001161A6 /* AppDelegate.swift in Sources */,
 			);
@@ -393,7 +393,7 @@
 			files = (
 				E9818E061B9F1B2D001161A6 /* TestObject.swift in Sources */,
 				E9818DD01B9F1AC7001161A6 /* HTZArchivableObjectTests.swift in Sources */,
-				E9818E011B9F1AEE001161A6 /* ArchivableObject.swift in Sources */,
+				E9818E011B9F1AEE001161A6 /* TransformableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9818DEB1B9F1AC8001161A6 /* ExtensionDelegate.swift in Sources */,
-				E9818E021B9F1AEE001161A6 /* ArchivableObject.swift in Sources */,
+				E9818E021B9F1AEE001161A6 /* TransformableObject.swift in Sources */,
 				E9818E071B9F1B2D001161A6 /* TestObject.swift in Sources */,
 				E9818DE91B9F1AC8001161A6 /* InterfaceController.swift in Sources */,
 			);
