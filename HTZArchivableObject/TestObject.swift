@@ -14,12 +14,11 @@ class TestObject: NSObject, TransformableObject {
 
     var keyForObject: String
 
-    var name: String
+    var name = String()
 
     override init()
     {
         self.keyForObject = "swiftObject"
-        self.name = ""
         super.init()
     }
 
