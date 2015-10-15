@@ -36,10 +36,22 @@ extension TransformableObject {
 
     - parameter dictionary: The dictionary to transform.
 
-    - returns: A **TransformableObject** object.
+    - returns: An optional **TransformableObject** object.
     */
-    static public func transformDictionaryIntoObject<T: TransformableObject>(dictionary: [String : AnyObject]) -> T
+    static public func transformDictionaryIntoObject<T: TransformableObject>(dictionary: [String : AnyObject]?) -> T?
     {
-        return NSKeyedUnarchiver.unarchiveObjectWithData(dictionary[dictionary.keys.first!] as! NSData!) as! T
+        return (dictionary?.isTransformableDictionary() == true) ? NSKeyedUnarchiver.unarchiveObjectWithData(dictionary![dictionary!.keys.first!] as! NSData!) as! T? : nil
+    }
+}
+
+extension Dictionary {
+
+    // Determines if the given dictionary is transformable.
+    func isTransformableDictionary() -> Bool {
+        if self.isEmpty == false || self.keys.first != nil {
+            return true
+        } else {
+            return false
+        }
     }
 }
