@@ -48,10 +48,6 @@ extension Dictionary {
 
     // Determines if the given dictionary is transformable.
     func isTransformableDictionary() -> Bool {
-        if self.isEmpty == false || self.keys.first != nil {
-            return true
-        } else {
-            return false
-        }
+        return (self.isEmpty == false || self.keys.first != nil) ? true : false
     }
 }
